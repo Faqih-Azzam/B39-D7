@@ -42,19 +42,6 @@ app.post('/add-project', function(req, res) {
     let js = req.body.js
     let node = req.body.node
 
-    // let data = {
-    //     title,
-    //     message,
-    //     startDate,
-    //     endDate,
-    //     html,
-    //     css,
-    //     js,
-    //     node
-    // }
-    
-    // console.log(data);
-
     console.log(title);
     console.log(startDate);
     console.log(endDate);
@@ -66,21 +53,6 @@ app.post('/add-project', function(req, res) {
 
     res.redirect('/')
 })
-
-// app.post('/add-project', function(req, res) {
-//     console.log(req.body);
-//     let title = req.body.name
-//     // let startDate = req.body.startDate
-//     // let endDate = req.body.endDate
-//     let message = req.body.message
-
-//     console.log(title);
-//     // console.log(startDate);
-//     // console.log(endDate);
-//     console.log(message);
-
-//     res.redirect('/')
-// })
 
 app.listen(3000, function() {
     console.log(`Example app listening on port`)
